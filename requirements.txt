@@ -1,0 +1,17 @@
+
+streamlit
+langchain
+langchain-huggingface
+langchain-qdrant
+langchain-community
+langchain-cohere
+langchain-groq
+langchain-text-splitters
+pypdf
+rank-bm25
+fastapi
+uvicorn
+cohere
+groq
+qdrant-client
+sentence-transformers

@@ -67,9 +67,12 @@ if __name__ == "__main__":
 
     chunks = chunking(PDF_PATH)
 
-    hybrid_results = hybrid_search(chunks, question)
+    semantic = get_retriever()
+    bm25 = BM25_retrieval(chunks)
+
+    hybrid_results = hybrid_search(chunks, question,semantic,bm25)
 
     reranked = cohere_reranker(hybrid_results, question)
 
-    print(generate_answer(reranked, question))
+    print(generate_answer(reranked, question ))
 
